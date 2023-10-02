@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <img id = "myImage" src = "image2.jpeg">
+        <div style="padding-left: 500px">
+            <p style="font-weight: bold; color: rgb(3, 3, 130); font-size: larger;">Click the buttons below to handle animation</p>
+            <input type = "button" value = "Start" onclick = "moveRight();" style="margin-left: 100px; width: 50px; height: 30px; border-radius: 5px;">
+            <input type = "button" value = "Stop" onclick = "stop();" style="width: 50px; height: 30px; border-radius: 5px;">
+        </div>
+    </form>   
+    <script>
+        var imgObj = null;
+        var animate ;
+        function init() {
+        imgObj = document.getElementById('myImage');
+        imgObj.style.position= 'relative'; 
+        imgObj.style.left = '0px'; 
+        }
+        function moveRight() {
+        imgObj.style.left = parseInt(imgObj.style.left) + 5 + 'px';
+        animate = setTimeout(moveRight,30);  
+        }
+        function stop() {
+        clearTimeout(animate);
+        imgObj.style.left = '0px'; 
+        }
+        window.onload = init;
+    </script>
+</body>
+</html>

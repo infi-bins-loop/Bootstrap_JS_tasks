@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        form div input, form div select {
+            width: 100%;
+            height: 40px;
+            border-radius: 8px;
+            outline: none;
+            border: 2px solid rgb(85, 85, 85);
+            padding: 0 30px;  
+        }
+        form div {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        form div i {
+            position: absolute;
+            padding: 10px;
+        }
+        .failure-icon, .error {
+            color: red;
+        }
+
+        .success-icon {
+            color: green;
+        }
+
+        .error {
+            font-size: 14.5px;
+            margin-top: 5px;
+        }
+        .success-icon, .failure-icon {
+            right: 0;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <form id="form" style="justify-content: center;max-width: 400px">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <i class="bi bi-exclamation-circle failure-icon"></i>
+                <i class="bi bi-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <i class="bi bi-exclamation-circle failure-icon"></i>
+                <i class="bi bi-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <i class="bi bi-exclamation-circle failure-icon"></i>
+                <i class="bi bi-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="hobbies">Hobbies</label>
+                <select name="hobbies">
+                    <option value="_menu_"></option>
+                    <option value="play">Sports</option>
+                    <option value="art">Art</option>
+                    <option value="dance">Dance</option>
+                    <option value="sing">Sing</option>
+                </select>
+            </div>
+            <br>
+            <button id="btn" type="submit" class="btn btn-danger" style="width: 400px">Submit</button>
+        </form>
+    </div>
+    <script>
+        let id = (id) => document.getElementById(id);
+        let classes = (classes) => document.getElementsByClassName(classes);
+        let name = id("name"),
+        email = id("email"),
+        password = id("password"),
+        form = id("form"),
+        error = classes("error"),
+        successIcon = classes("success-icon"),
+        failureIcon = classes("failure-icon");
+
+        form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        drive(name, 0, "Name is required");
+        drive(email, 1, "Email is required");
+        drive(password, 2, "Password is required");
+        });
+
+        let drive = (id, serialno, message) => {
+        if (id.value.trim() === "") {
+        error[serialno].innerHTML = message;
+        id.style.border = "2px solid red";
+        failureIcon[serialno].style.opacity = "1";
+        successIcon[serialno].style.opacity = "0";
+        } 
+        else {
+        error[serialno].innerHTML = "";
+        id.style.border = "2px solid green";
+        failureIcon[serialno].style.opacity = "0";
+        successIcon[serialno].style.opacity = "1";
+        }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

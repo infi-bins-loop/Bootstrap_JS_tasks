@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div style="border: 1px solid black; width: 800px; height: 700px; margin: 0 auto; background-image: linear-gradient(rgb(245, 245, 147),rgb(217, 111, 128));">
+        <h2 style="text-align: center; color: blue; font-weight: bold;">Registration Form</h2><br>
+        <form>
+        <table style="box-align: center; text-align: left; margin: 0 auto;">
+            <tr>
+            <td style="width: 150px">Firstname:</td>
+            <td style="width: 300px"><input type="text" style="width: 300px ;" id="Fname"></td>
+            <td style="width: 150px; color: red;">POOR</td>
+            </tr> 
+            <tr>
+                <td style="width: 150px">Lastname:</td>
+                <td style="width: 300px"><input type="text" style="width: 300px ;" id="Lname"></td>
+                <td style="width: 150px; color: red;">POOR</td>
+            </tr> 
+            <tr>
+                <td style="width: 150px">Email:</td>
+                <td style="width: 300px"><input type="text" style="width: 300px ;" id="Email"></td>
+                <td style="width: 150px; color: red;">POOR</td>
+            </tr>
+            <tr>
+                <td style="width: 150px">Password:</td>
+                <td style="width: 300px"><input type="text" id="Password" style="width: 300px ;" id="Password"></td>
+                <td style="width: 150px; color: red;">POOR</td>
+            </tr>  
+            <tr>
+                <td style="width: 150px">Re-enter Password:</td>
+                <td style="width: 300px"><input type="text" id="Re-password" style="width: 300px ;" id="Repassword"></td>
+                <td style="width: 150px; color: red;">POOR OR MISMATCH</td>
+            </tr>  
+            <tr>
+                <td style="width: 150px">Gender:</td>
+                <td style="width: 300px; text-align: left; font-weight: 100;"><input type="radio" name="Gender">Male <br>
+                    <input type="radio" name="Gender">Female
+                </td>
+            </tr>  
+            <tr>
+                <td style="width: 150px">Age:</td>
+                <td style="width: 300px"><input type="text" style="width: 300px ;" id="Age"></td>
+                <td style="width: 150px; color: red;">POOR</td>
+            </tr> 
+            <tr>
+                <td style="width: 150px">Phone Number:</td>
+                <td style="width: 300px"><input type="text" style="width: 300px ;" id="Phone"></td>
+                <td style="width: 150px; color: red;">POOR</td>
+            </tr> 
+            <tr>
+                <td style="width: 150px; height: 100px;">Address:</td>
+                <td style="width: 300px; height: 100px;"><input type="text" style="width: 300px ; height: 100px " id="Address"></td>
+                <td style="width: 150px; color: red;">POOR</td>
+            </tr> 
+            <tr>
+                <td style="width: 150px">State:</td>
+                <td style="width: 300px"><input type="text" style="width: 300px ;" id="State"></td>
+                <td style="width: 150px; color: red;">POOR</td>
+            </tr>
+            <tr>
+                <td style="width: 150px">Country:</td>
+                <td style="width: 300px">
+                <select id="Choose your country">
+                    <option value="__menu__">Choose your country</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="bangkok">Bangkok</option>
+                    <option value="canada">Canada</option>
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option>
+                </select>
+                </td>
+            </tr>  
+            <tr>
+                <td style="width: 150px">Languages known:</td>
+                <td style="width: 300px; font-weight: 100;"><input type="checkbox" name="english">English
+                <input type="checkbox" name="kannada">kannada
+                <input type="checkbox" name="hindi">Hindi
+                <input type="checkbox" name="telugu">Telugu 
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 150px; font-weight: 100;" colspan="2"><input type="checkbox" name="condition">Hereby I declare all the given details are true
+            </tr>
+            <tr>
+                <td style="width: 150px; font-weight: 100; text-align: right;" colspan="2">
+                Log in to <a href="ethnus">Ethnus</a> website
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button style="background-color: rgb(230, 1, 1); display: flex;
+        justify-content: center; text-align: center; margin: 0 auto; border-color: black; color: white; border-radius: 30px; width: 100px; font-weight: bold;" type="submit">
+            REGISTER
+        </button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+<body>
+    <form action="#" method="post" data-toggle="validator" role="form" class="was-validated">
+        <br>
+        <div class="form-row">
+            <div class="col-2"></div>
+            <div class="form-group col-2 text-center">
+                <p style="font-weight: bold;">First Name</p><br>
+                <p style="font-weight: bold;">Last Name</p><br>
+                <p style="font-weight: bold;">Email</p><br>
+                <p style="font-weight: bold;">Phone #</p><br>
+                <p style="font-weight: bold;">Address</p><br>
+                <p style="font-weight: bold;">City</p><br>
+                <p style="font-weight: bold;">State</p><br>
+                <p style="font-weight: bold;">Do you have hosting?</p><br>
+                <p style="font-weight: bold;">Project Description</p><br>
+            </div>
+            <div class="form-group col-3">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                  </div>
+                  <input type="text" class="form-control" placeholder="First Name" required>
+                </div>
+                <br>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Last Name" required>
+                </div>
+                <br>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="bi bi-envelope-fill"></i></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Email Address" required>
+                </div>
+                <br>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="bi bi-telephone-fill"></i></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="(845)555-1212" required>
+                </div>
+                <br>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="bi bi-house-fill"></i></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Address" required>
+                </div>
+                <br>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="bi bi-house-fill"></i></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="City" required>
+                </div>
+                <br>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="bi bi-list-ul"></i></div>
+                    </div>
+                    <select id="Please select your state" class="form-control">
+                        <option value="_menu_">Please select your state</option>
+                        <option value="ap">Andhra Pradesh</option>
+                        <option value="tn">Tamil Nadu</option>
+                        <option value="ka">Karnataka</option>
+                        <option value="kl">Kerala</option>
+                        <option value="mh">Maharashtra</option>
+                        <option value="od">Odisha</option>
+                    </select>
+                </div>
+                <br>
+                <div style="margin-top: 13px; margin-bottom: 0px;">
+                    <input type="radio" name="hosting"> Yes
+                    <br>
+                    <input type="radio" name="hosting"> No
+                </div>
+                <br>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="bi bi-pencil-fill"></i></div>
+                    </div>
+                    <textarea type="text" class="form-control" placeholder="Project Description"></textarea>
+                </div>
+                <br>
+                <button class="btn" style="background-color: rgb(255, 170, 0); color: white;" type="submit">Save</button>
+                <br>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

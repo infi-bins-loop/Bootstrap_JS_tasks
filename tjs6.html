@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .divi {
+            margin: 0 aut0; 
+            width: 350px; 
+            height: 350px; 
+            border: 1px solid rgb(227, 227, 227); 
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19); 
+            left: 40%; 
+            top: 20%; 
+            position: absolute;
+        }
+        img{
+            padding-left: 80px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+        .btn{
+            margin-left: 40px;
+        }
+        .di{
+            top: 72%;
+            left: 44%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="divi">
+        <img src="image1.png" alt="instagram logo">
+        <br><form id="form_id">
+        <button style="position: absolute; padding-right: 3.5px" class="btn"><i class="fa fa-user" style="font-size: 25px; color: rgb(82, 81, 81);"></i></button>
+        <input type="text" placeholder="Username" id="username" style="margin-left: 74px; height: 25px; width: 220px; padding-left: 10px;" required>
+        <br><br>
+        <button style="padding-right: 3px; position: absolute;" class="btn"><i class="fa fa-lock" style="font-size: 25.3px; color: rgb(82, 81, 81); margin-left: 1px;"></i></button>
+        <input type="password" placeholder="Password" id="password" style="margin-left: 73px; height: 25px; width: 220px; padding-left: 10px;" required>
+        <br><br>
+        <button style="width: 270px; height: 40px; margin-left: 40px; background-color: #0586f7; text-align: center; color: white; font-weight: bold; border-color: white;" onclick="required()">Login</button>
+        <br><br>
+        <input type="checkbox" style="margin-left: 40px;">Remember me 
+        <a href="#" style="float: right; margin-right: 20px;">Forgot Password?</a></form>
+    </div>
+    <div class="di">
+        <p>Don't have an account! <a href="#">Sign up here</a></p>
+    </div>
+    <script>
+    document.getElementById('toggle-password-visibility-button').addEventListener('click', togglePasswordVisibility);      
+    </script>
+</body>
+</html>
+
